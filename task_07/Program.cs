@@ -31,6 +31,7 @@ bool ElementPositiv(int num)
         result = true;
     return result;
 }
+// Метод считает сумму положительных и отрицательных элементов и выводит результат
 void SumPositivAndNegativElement(int[] mas)
 {
     int sumpositiv = 0;
@@ -60,6 +61,6 @@ void SumPositivAndNegativElement(int[] mas)
 Console.Write("Введите длинну массива:");
 int LengthArray = int.Parse(Console.ReadLine());
 int[] array = new int[LengthArray];
-RandomArrayElement(array, -10, 10);// Генерация элементов масива в заданном диапазоне
+RandomArrayElement(array, 0, 10);// Генерация элементов масива в заданном диапазоне
 PrintArray(array);
 SumPositivAndNegativElement(array);
